@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Cadastro</title>
+    <link rel="stylesheet" href="/static/css/coisa.css">
+</head>
+<body>
+
+    <header>
+
+    </header>
+
+    <br>
+    <h1 class="h11">Inserção de Pacientes</h1>
+    <br><br>
+        <form action="/adicionar_jogo" method="POST">
+            <div class="coolinput">
+                <label for="nomejogo">Nome do jogo:</label>
+                <input type="text" placeholder="Digite aqui" id="nomejogo" name="nomejogo" class="input">
+            </div>
+            <div class="coolinput">
+                <label for="genero">Gênero:</label>
+                <input type="text" placeholder="Digite aqui" id="genero" name="genero" class="input">
+            </div>
+            <div class="coolinput">
+                <label for="desenvol">Desenvolvedora:</label>
+                <input type="text" placeholder="Digite aqui" id="desenvol" name="desenvol" class="input">
+            </div>
+            <div class="coolinput">
+                <label for="lancamento">Lançamento:</label>
+                <input type="date" placeholder="Digite aqui" id="lancamento" name="lancamento" class="input">
+            </div>
+            <br><br>
+            <button type="submit" value="Adicionar"><span>Adicionar</span></button><br><br>
+        </form>
+</body>
+
+<footer>
+
+</footer>
+
+</html>
