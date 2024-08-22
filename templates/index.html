@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/estilo.css">
+    <title>Biblioteca de Jogos</title>
+</head>
+<header>
+    <h1>Biblioteca de Jogos</h1>
+</header>
+<body>
+    <section>
+        <ul>
+            {% for jogo in games %}
+            <li>{{ jogo[1] }}  {{ jogo[2] }}  {{ jogo[3] }}</li>
+            <li><a class="botdois textobotao" href="/editar_jogo/{{ loop.index0 }}">Editar</a></li>
+            <li><a class="botdois textobotao" href="/apagar_jogo/{{ loop.index0 }}">Apagar</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section class="coisas">
+            <a href="/adicionar_jogo" class="textobotao botao">Adicionar Jogo</a>
+    </section>
+</body>
+</html>

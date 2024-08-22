@@ -1,0 +1,108 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cabecalho: #3a00b8;
+    --botoes: #010cd3;
+    --fundos: white;
+}
+
+header {
+    background-color: var(--cabecalho);
+    display: flex;
+    gap: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 25px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.botao{
+    padding: 15px;
+    background-color: var(--botoes);
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.botdois{
+    padding: 10px;
+    background-color: var(--botoes);
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.coisas{
+    display: flex;
+    justify-content: center;
+}
+
+.adicionar_texto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.adici_coisa{
+    display: flex;
+    justify-content: center;
+    background-color: var(--fundos);
+    margin: 10px;
+    margin-left: 450px;
+    margin-right: 450px;
+    border: 10px;
+    border-radius: 10px;
+    border-color: var(--botoes);
+}
+
+.coolinput {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    max-width: 240px;
+  }
+
+  .coolinput label.text {
+    font-size: 0.75rem;
+    color: var(--botoes);
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background: var(--fundos);
+    width: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .coolinput input[type=text].input {
+    padding: 11px 10px;
+    font-size: 0.75rem;
+    border: 2px var(--botoes) solid;
+    border-radius: 5px;
+    background: var(--fundos);
+  }
+
+  .coolinput input[type=text].input:focus {
+    outline: none;
+  }
+  
+footer {
+    background-color: var(--cabecalho);
+    display: flex;
+    gap: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 25px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 20px;
+}

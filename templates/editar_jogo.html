@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a escala inicial e a largura da visualização para dispositivos móveis -->
+    <link rel="stylesheet" href="/static/css/estilo.css">
+    <title>Editar Jogo</title> <!-- Define o título da página -->
+</head>
+<body>
+  <!-- Início do Cabeçalho -->
+    <header>
+        <h1>Biblioteca de Jogos</h1>
+    </header>
+    <!-- fim do cabeçalho -->
+     <center>
+    <h1 class="adicionar_texto">Editar Jogo</h1>
+    </center>
+    <section class="adici_coisa">
+        <form action="/editar_jogo/{{ jogo[0] }}" method="POST">
+                <div class="coolinput">
+                    <label for="nomejogo" class="text">Nome do jogo:</label>
+                    <input type="text" placeholder="Digite aqui" id="nomejogo" name="nomejogo" required class="input" value="{{jogo[1]}}">
+                </div>
+                <div class="coolinput">
+                    <label for="genero" class="text">Gênero:</label>
+                    <input type="text" placeholder="Digite aqui" id="genero" name="genero" required class="input" value="{{jogo[2]}}">
+                </div>
+                <div class="coolinput">
+                    <label for="desenvol" class="text">Desenvolvedora:</label>
+                    <input type="text" placeholder="Digite aqui" id="desenvol" name="desenvol" required class="input" value="{{jogo[3]}}">
+                </div>
+            <button class="botao" type="submit" value="Salvar"><span>Salvar</span></button><br><br>
+        </form>
+    </section>
+</body>
+</html>

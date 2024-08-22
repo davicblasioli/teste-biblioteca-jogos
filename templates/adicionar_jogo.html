@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Cadastro</title>
+    <link rel="stylesheet" href="/static/css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Biblioteca de Jogos</h1>
+    </header>
+    <center>
+        <h1 class="adicionar_texto">Adicionar um jogo</h1>
+    </center>
+    <section class="adici_coisa">
+
+        <form action="/adicionar_jogo" method="POST">
+            <div class="coolinput">
+                <label for="nomejogo" class="text">Nome do jogo:</label>
+                <input type="text" placeholder="Digite aqui" id="nomejogo" required name="nomejogo" class="input">
+            </div>
+            <div class="coolinput">
+                <label for="genero" class="text">Gênero:</label>
+                <input type="text" placeholder="Digite aqui" id="genero" required name="genero" class="input">
+            </div>
+            <div class="coolinput">
+                <label for="desenvol" class="text">Desenvolvedora:</label>
+                <input type="text" placeholder="Digite aqui" id="desenvol" required name="desenvol" class="input">
+            </div>
+            <button type="submit" value="Adicionar" class="botao">Adicionar</button>
+        </form>
+    </section>
+</body>
+</html>
